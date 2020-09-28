@@ -1,0 +1,26 @@
+﻿<Window x:Class="View.Add_Contact_View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Name="fenetreNouveauContact" Title="MY CONTACTS" Height="450" Width="800" Foreground="Black" Background="Azure">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="148,47,0,0" TextWrapping="Wrap" Text="Firts Name : " VerticalAlignment="Top" Width="294"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="148,106,0,0" TextWrapping="Wrap" Text="Last Name : " VerticalAlignment="Top" Width="276"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="148,165,0,0" TextWrapping="Wrap" Text="Email : " VerticalAlignment="Top" Width="276"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="148,224,0,0" TextWrapping="Wrap" Text="Phone : " VerticalAlignment="Top" Width="278"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="148,283,0,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Width="278"/>
+        <Label Content="New Contact" HorizontalAlignment="Left" Height="37" Margin="309,10,0,0" VerticalAlignment="Top" Width="125" FontSize="20" Foreground="DarkSlateGray"/>
+        <TextBox Name="NewContactFirtsName" HorizontalAlignment="Left" Height="25" Margin="148,76,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="276"/>
+        <TextBox Name="NewContactSecondName" HorizontalAlignment="Left" Height="25" Margin="148,130,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="276"/>
+        <TextBox Name="NewContactEmail" HorizontalAlignment="Left" Height="25" Margin="148,189,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="276"/>
+        <TextBox Name="NewContactPhone" HorizontalAlignment="Left" Height="25" Margin="148,253,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="278"/>
+        <TextBox Name="NewContactAge" HorizontalAlignment="Left" Height="25" Margin="148,307,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="278"/>
+        <Button Name="boutonNewContact" Content="Add New Contact" HorizontalAlignment="Left" Height="37" Margin="481,130,0,0" VerticalAlignment="Top" Width="278" Click="BoutonNewContact_Click"/>
+        <Button Name="backToMenu" Content="Back To menu" HorizontalAlignment="Left" Height="37" Margin="481,172,0,0" VerticalAlignment="Top" Width="278" RenderTransformOrigin="0.509,-0.073" Click="BackToMenu_Click" />
+        <Button Name="signOutNewContact" Content="Sign Out" HorizontalAlignment="Left" Height="33" Margin="481,216,0,0" VerticalAlignment="Top" Width="278" Click="SignOutNewContact_Click"/>
+        <Label  Name="addContactMessage" HorizontalAlignment="Left" Margin="481,265,0,0" VerticalAlignment="Top" Width="278"/>
+    </Grid>
+</Window>

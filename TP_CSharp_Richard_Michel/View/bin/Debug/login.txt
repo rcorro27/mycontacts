@@ -1,0 +1,3 @@
+Michel,Luc,adjchel@gmail.com,1425,Michel
+Richard,Pop,rich@gmail.com,4541,Richard
+Stephane,Duval,stephane@gmail.com,744,744

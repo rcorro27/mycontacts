@@ -1,0 +1,34 @@
+﻿<Window x:Class="View.Research_Contact_View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="Research_Contact_View" Height="450" Width="800" Foreground="Black" Background="Azure">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="10,140,0,0" TextWrapping="Wrap" Text="Enter the searching for phone number : " VerticalAlignment="Top" Width="190" FontSize="12"/>
+        <Button Name="boutonRechercher" Content="Search" HorizontalAlignment="Left" Height="30" Margin="10,279,0,0" VerticalAlignment="Top" Width="190" Click="BoutonRechercher_Click"/>
+        <TextBox Name="phoneARechercher" HorizontalAlignment="Left" Height="33" Margin="10,241,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.452,2.073"/>
+        <TextBlock Name="messageRecherche" HorizontalAlignment="Left" Height="29" Margin="10,199,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190"/>
+        <ListView Name="contactsAfficher" HorizontalAlignment="Left" Height="273" Margin="205,137,0,0" VerticalAlignment="Top" Width="540">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Firts Name" Width="120" DisplayMemberBinding="{Binding FirstName}" />
+                    <GridViewColumn Header="Last Name" Width="120" DisplayMemberBinding="{Binding LastName}" />
+                    <GridViewColumn Header="Email" Width="120" DisplayMemberBinding="{Binding Email}" />
+                    <GridViewColumn Header="Phone" Width="120" DisplayMemberBinding="{Binding Phone}" />
+                    <GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Height="47" Margin="10,10,0,0" TextWrapping="Wrap" Text="MY CONTACTS " VerticalAlignment="Top" Width="415" RenderTransformOrigin="0.486,0.19" FontSize="20" Foreground="DarkSlateGray" />
+        <TextBlock HorizontalAlignment="Left" Height="47" Margin="430,10,0,0" TextWrapping="Wrap" Text="USERMANE" VerticalAlignment="Top" Width="354" FontSize="15" Foreground="DarkSlateGray"/>
+        <TextBlock HorizontalAlignment="Left" Name="listFirstNameFound" Margin="221,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Name="listSecondNameFound" Margin="338,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="108"/>
+        <TextBlock HorizontalAlignment="Left" Name="listEmailFound" Margin="465,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Name="listPhoneFound" Margin="603,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="91"/>
+        <TextBlock HorizontalAlignment="Left" Name="listAgeFound" Margin="699,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="44"/>
+
+    </Grid>
+</Window>
